@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Karla;
+  src: url(../fonts/Karla-VariableFont_wght.ttf); //Weights used: 400, 700;
+}
+
+$cyan: rgb(42, 178, 175);
+$cyan2: rgb(74, 190, 190);
+$brightYellow: rgb(192, 223, 52);
+$lightGray: rgb(229, 239, 245);
+$grayishBlue: rgb(152, 166, 189);
+$gray: rgb(190, 190, 190);
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightGray;
+  font-family: Karla;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 72px 30px;
+  }
+}
